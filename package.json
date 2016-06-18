@@ -1,0 +1,15 @@
+{
+  "name": "asc",
+  "version": "0.0.0",
+  "description": "Automated System of the Competitions",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "asc",
+    "competitions"
+  ],
+  "author": "Ruslan Nekhoroshkin <nrvru@yandex.ru>",
+  "license": "MIT"
+}
