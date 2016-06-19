@@ -1,13 +1,12 @@
-'use strict';
-
-const {resolve} = require('path');
+const { resolve } = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = env => {
   return {
     context: resolve(__dirname, 'src'),
     entry: './index.js',
     output: {
-      filename: 'bundle.js',
+      filename: 'bundle.[chunkhash].js',
       path: resolve(__dirname, 'dist')
     },
     resolve: {
@@ -17,6 +16,9 @@ module.exports = env => {
       ]
     },
     devtool: env.production ? 'source-map' : 'eval',
+    plugins: [new HtmlWebpackPlugin({
+      template: './index.html'
+    })],
     module: {
       loaders: [
         {
@@ -30,5 +32,5 @@ module.exports = env => {
         }
       ]
     }
-  }
+  };
 };
