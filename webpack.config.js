@@ -26,7 +26,7 @@ module.exports = env => {
     ]),
     output: {
       filename: ifProduction('bundle.[chunkhash].js', 'bundle.js'),
-      path: resolve(__dirname, 'dist'),
+      path: resolve(__dirname, 'build'),
     },
     resolve: {
       modules: [
@@ -66,6 +66,10 @@ module.exports = env => {
         {
           test: /\.css$/,
           loader: 'style!css',
+        },
+        {
+          test: /\.less$/,
+          loader: 'style!css!less',
         },
       ],
     },
