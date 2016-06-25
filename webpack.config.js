@@ -46,7 +46,7 @@ module.exports = env => {
       loaders: [
         {
           test: /\.js$/,
-          loaders: 'babel!eslint',
+          loaders: env.test ? 'babel' : 'babel!eslint',
           exclude: /node_modules/
         },
         {
