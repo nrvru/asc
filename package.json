@@ -10,6 +10,7 @@
   "scripts": {
     "validate": "npm-run-all --parallel lint test",
     "test": "karma start",
+    "start": "webpack-dev-server --env.development --hot --inline",
     "test:watch": "npm test -- --auto-watch --no-single-run",
     "build": "webpack --env.development",
     "build:production": "webpack --env.production",
@@ -22,6 +23,7 @@
   "author": "Ruslan Nekhoroshkin <nrvru@yandex.ru>",
   "license": "MIT",
   "dependencies": {
+    "admin-lte": "^2.3.3",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
   },
@@ -52,6 +54,7 @@
     "mocha": "^2.5.3",
     "npm-run-all": "^2.2.0",
     "style-loader": "^0.13.1",
-    "webpack": "^2.1.0-beta.13"
+    "webpack": "^2.1.0-beta.14",
+    "webpack-dev-server": "^2.1.0-beta.0"
   }
 }
