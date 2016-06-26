@@ -24,6 +24,7 @@
   "license": "MIT",
   "dependencies": {
     "admin-lte": "^2.3.3",
+    "bootstrap": "^3.3.6",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
   },
@@ -41,6 +42,7 @@
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.5.3",
     "eslint-plugin-react": "^5.2.2",
+    "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.21.0",
     "karma": "^0.13.22",
     "karma-chai": "^0.1.0",
@@ -55,6 +57,7 @@
     "mocha": "^2.5.3",
     "npm-run-all": "^2.2.0",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^2.1.0-beta.14",
     "webpack-dev-server": "^2.1.0-beta.0"
   }
