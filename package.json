@@ -25,6 +25,7 @@
   "dependencies": {
     "admin-lte": "^2.3.3",
     "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
   },
