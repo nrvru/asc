@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Content = () => (
-  <div className="content-wrapper">
+  <div className="content-wrapper content-height">
     <section className="content-header">
       <h1>
         Заголовок

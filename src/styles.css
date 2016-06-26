@@ -1,0 +1,9 @@
+.content-height {
+    min-height: 939px;
+}
+
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
