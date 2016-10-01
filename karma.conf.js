@@ -1,19 +1,19 @@
-const webpackConfig = require('./webpack.config')({test: true});
+const webpackConfig = require('./webpack.config')({ test: true });
 
-const testGlog = 'test/**/*';
+const testGlob = 'test/**/*';
 const srcGlob = 'src/**/*';
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['mocha', 'chai'],
-    files: [testGlog],
+    files: [testGlob],
     preprocessors: {
-      [testGlog]: ['webpack', 'sourcemap'],
-      [srcGlob]: ['webpack', 'sourcemap']
+      [testGlob]: ['webpack', 'sourcemap'],
+      [srcGlob]: ['webpack', 'sourcemap'],
     },
     webpack: webpackConfig,
-    webpackMiddleware: {noInfo: true},
+    webpackMiddleware: { noInfo: true },
     reporters: ['progress', 'coverage'],
     coverageReporter: {},
     port: 9876,
@@ -22,6 +22,6 @@ module.exports = function(config) {
     autoWatch: false,
     browsers: ['Chrome'],
     singleRun: true,
-    concurrency: Infinity
-  })
+    concurrency: Infinity,
+  });
 };
